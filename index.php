@@ -92,4 +92,19 @@
             <p>For further queries mail us at helplineplus@gmail.com. We are eager to hear from you.</p>
             <hr class="bottom-line">
           </div>
+          <footer id="footer" class="footer">
+      <div class="container text-center">
+    
+      <ul class="social-links">
+        <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+      </ul>
+        
+             </div>
+      </div>
+    </footer>
+    <!--/ Footer-->
    
