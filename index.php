@@ -36,5 +36,60 @@
     </nav>
     <!--/ Navigation bar-->
     <!--Modal box-->
-
+    <!--Feature-->
+    <section id ="feature" class="section-padding featureblock">
+      <div class="container ">
+        <div class="row">
+          <div class="header-section text-center">
+            <h2>Features</h2>
+            <hr class="bottom-line">
+          </div>
+          <div class="feature-info">
+            <div class="fea">
+              <div class="col-md-4">
+                <div class="heading pull-right">
+                  <h4>Medical Support</h4>
+                  <p>Find nearest hospital to your location and get access to their HOTLINE! Also get to know about the availability of desired blood group and for emergency, request donors for blood.</p>
+                </div>
+                <div class="fea-img pull-left">
+                  <i class="fa fa-hospital-o" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="fea">
+              <div class="col-md-4">
+                <div class="heading pull-right">
+                  <h4>Fire Brigade</h4>
+                  <p>Call Fire Brigade for urgent help nearest to your doorsteps.</p>
+                </div>
+                <div class="fea-img pull-left">
+                  <i class="fa fa-fire-extinguisher" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="fea">
+              <div class="col-md-4">
+                <div class="heading pull-right">
+                  <h4>Security Service</h4>
+                  <p>Get immediate support from your nearest security services.</p>
+                </div>
+                <div class="fea-img pull-left">
+                  <i class="fa fa-shield" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!--/ feature-->
+    <!--Contact-->
+    <section id ="contact" class="section-padding worldmap">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h2>Contact Us</h2>
+            <p>For further queries mail us at helplineplus@gmail.com. We are eager to hear from you.</p>
+            <hr class="bottom-line">
+          </div>
    
