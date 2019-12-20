@@ -1,0 +1,48 @@
+.card-glance i{
+	font-size: 20px;
+	color: #777777;
+	padding: 0 20px;/*problem? at a glance*/
+}
+
+.table-comments img{
+	max-width: 60px;
+}
+
+.table-comments .footer a,
+.card-view .stats a{
+	color: #777777;
+	padding: 0 5px;
+}
+
+.card-view .stats{
+	padding-top: 15px;
+}
+
+.post_content{
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid #E4E4E6;
+	border-radius: 5px;
+}
+
+.post_content p{
+	font-size: 15px;
+	font-family: sans-serif;
+}
+
+.borderless > tbody > tr > td{
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	font-size: 15px;
+}
+
+.borderlessplus{
+	padding: 0px;
+	margin: 0px;
+}
+
+.borderlessplus > tbody > tr > td{
+	padding: 0px 5px;
+	border: none;
+}
