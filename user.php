@@ -1,6 +1,6 @@
 <?php
 
-
+include 'session.php';
 
 $updateFlag = 0;
 if(isset($_POST['update_profile'])){
