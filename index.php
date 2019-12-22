@@ -1,4 +1,30 @@
+<?php
+session_start();
+$_SESSION = array();
 
+require 'functions/DB.php';
+$db = new DB();
+
+$flag = 0;
+if(isset($_POST['signin'])){
+    $email =  htmlspecialchars($_POST['email']);
+    $pass =  htmlspecialchars($_POST['password']);
+    
+    $res = $db->isUserExist($email);
+    if($res){
+        $check = $db->checkLogin($email, $pass);
+        if($check){
+            $_SESSION['user_email'] = $email;
+            header('Location: dashboard.php');
+        } else {
+            $flag = 1;
+        }
+    }
+} else {
+    session_unset(); //remove all session variable
+    session_destroy(); //destroy the current session
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
