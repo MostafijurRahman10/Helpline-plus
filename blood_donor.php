@@ -1,6 +1,6 @@
 <?php
 
-
+include 'session.php';
 
 if(isset($_POST['search_doner'])){
     $records = $db->getDonerDetailsViaFilter(htmlspecialchars($_POST['filter']));
