@@ -1,5 +1,5 @@
 <?php
-include 'session.php';
+
 
 $flag = 0;
 if(isset($_POST['addPost'])){
