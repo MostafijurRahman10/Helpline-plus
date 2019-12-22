@@ -1,10 +1,8 @@
 
 namespace Tests\Feature;
 use App\category;
-//use http\Client\Curl\User;
 use App\Product;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 class ViewLandingPageTest extends TestCase
 {
@@ -19,7 +17,7 @@ class ViewLandingPageTest extends TestCase
        //assert
        $response->assertStatus(200);
        $response->assertSee('login');
-       $response->assertSee('Dress Rent');
+       $response->assertSee('Help Line');
    }
    /** @test */
    public function only_logged_in_users_can_see_the_user_dashboard()
@@ -43,17 +41,17 @@ class ViewLandingPageTest extends TestCase
     /**@test*/
     public function a_customer_can_be_added_through_the_form()
     {
-        $this->actingAs(factory(product::class)->create());
-        $response = $this->post('/admin/dashboard/products/store',[
+        $this->actingAs(factory(login::class)->create());
+        $response = $this->post('/admin/dashboard/login/store',[
         'title' => 'name',
         'description' => 'description',
-        'price' => '400',
-        'discount' =>'20',
-        'thumbnail' => 'storage/upload/fileNameToStore',
-        'options' =>2,
-        'slug' =>1,
+        'fname' => '400',
+        'lname' =>'20',
+        'phone' => 'storage/upload/fileNameToStore',
+        'house' =>2,
+        'city' =>1,
         ]);
-        $this->assertCount(1 ,Product::all());
+        $this->assertCount(1 ,login::all());
     }
     //this test is not working
    /*
