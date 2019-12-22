@@ -1,6 +1,6 @@
 <?php
 
-
+include 'session.php';
 if(isset($_POST['search_doctor'])){
     $records = $db->getDoctorDetailsViaFilter(htmlspecialchars($_POST['filter']));
 }else{
