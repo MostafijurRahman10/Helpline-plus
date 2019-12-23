@@ -9,9 +9,9 @@ if (isset($_POST['register'])) {
 
     if (!empty($_FILES)) {
 
-        $res = $db->uploadImage($_FILES, "image");
+    //   $res = $db->uploadImage($_FILES, "image");
 
-        if ($res !== "") {
+    //   if ($res !== "") {
 
             $details['email'] = htmlspecialchars($_POST['email']);
 
@@ -51,9 +51,9 @@ if (isset($_POST['register'])) {
             } else {
                 $flag = 1;
             }
-        } else {
-            $flag = 1;
-        }
+        //} else {
+        //    $flag = 1;
+        //}
     } else {
         $flag = 1;
     }
@@ -202,12 +202,7 @@ if (isset($_POST['register'])) {
                     <input class="year" type="text" maxlength="4" style="width: 40px;" name="last_donate3" required=""/>
                 </p>
 
-                <p>
-                    <div>
-                        <label>Profile Picture</label>
-                        <input type="file" name="image" required=""/>
-                    </div>
-                </p>
+
 
             </fieldset>
 
@@ -223,6 +218,7 @@ if (isset($_POST['register'])) {
         </form>
     </body>
 </html>
+
 
 
 
