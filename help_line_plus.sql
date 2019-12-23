@@ -3,7 +3,6 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 17, 2017 at 09:42 PM
 -- Server version: 10.1.25-MariaDB
 -- PHP Version: 7.1.7
 
@@ -40,17 +39,9 @@ CREATE TABLE `blood_donor` (
 --
 
 INSERT INTO `blood_donor` (`bdid`, `bid`, `blood_group`, `last_donate_date`) VALUES
-(1, 1, 'B+', '28-December-2016'),
-(2, 2, 'B+', '1-January-2017'),
-(3, 3, 'A+', '3-April-2017'),
-(4, 4, 'B+', '1-January-2017'),
-(5, 5, 'B+', '1-January-2017'),
-(6, 6, 'B+', '1-January-2017'),
-(7, 7, 'A+', '14-February-2017'),
-(8, 8, 'A+', '14-February-2017'),
-(9, 9, 'O+', '1-January-2017'),
-(10, 10, 'O+', '8-September-2016'),
-(11, 11, 'B+', '1-January-2017');
+(1, 1, 'B+', '16-December-2019'),
+(2, 2, 'B+', '16-December-2019'),
+(3, 3, 'B+', '16-December-2019');
 
 -- --------------------------------------------------------
 
@@ -409,11 +400,10 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`pid`, `uid`, `post_details`, `category`, `create_date`) VALUES
-(1, 1, 'Emergency blood needed for a child.\r\nBlood Group: O-\r\nNumber of Units: 5 bags\r\nLocation: Dhaka Medical College Hospital\r\nContact Number: 01500000000', 'Blood Request', '17-08-2017'),
-(2, 4, 'Emergency blood needed for a pregnant woman.\r\nBlood Group: A+\r\nNumber of Units: 2 bags\r\nLocation: Apollo Hospitals\r\nContact Number: 01500000001', 'Blood Request', '17-08-2017'),
-(3, 5, 'Emergency blood needed for a blood cancer patient.\r\nBlood Group: A+\r\nNumber of Units: 8 bags\r\nLocation: Labaid Specialized Hospital\r\nContact Number: 01500000002', 'Blood Request', '17-08-2017'),
-(4, 2, 'Emergency blood needed for an accident patient.\r\nBlood Group: B+\r\nNumber of Units: 5 bags\r\nLocation: Popular Diagnostic Centre Ltd\r\nContact Number: 01500000003', 'Blood Request', '17-08-2017');
-
+(1, 1, 'Emergency blood needed for a child.\r\nBlood Group: O-\r\nNumber of Units: 5 bags\r\nLocation: Dhaka Medical College Hospital\r\nContact Number: 01500000000', 'Blood Request', '16-16-2019'),
+(2, 1, 'Emergency blood needed for a pregnant woman.\r\nBlood Group: A+\r\nNumber of Units: 2 bags\r\nLocation: Apollo Hospitals\r\nContact Number: 01500000001', 'Blood Request', '17-12-2019'),
+(3, 2, 'Emergency blood needed for a blood cancer patient.\r\nBlood Group: A+\r\nNumber of Units: 8 bags\r\nLocation: Labaid Specialized Hospital\r\nContact Number: 01500000002', 'Blood Request', '12-12-2019'),
+(4, 3, 'Emergency blood needed for an accident patient.\r\nBlood Group: B+\r\nNumber of Units: 5 bags\r\nLocation: Popular Diagnostic Centre Ltd\r\nContact Number: 01500000003', 'Blood Request', '10-12-2019');
 -- --------------------------------------------------------
 
 --
@@ -476,17 +466,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`uid`, `fname`, `lname`, `email`, `en_pass`, `salt`, `img_url`, `ref_key`) VALUES
-(1, 'Sujit', 'Debnath', 'sujit@gmail.com', 'jh7a3ovv14I9lYayFCROHZcRRlFmZjI5MmQ5YTA4', 'ff292d9a08', '5995ece4479321.78974215.jpg', '5995e4c604a044.26789393'),
-(2, 'KN', 'Roy', 'komol@gmail.com', 'ozXIF0UKJxREezD/ECgUTTzuiw9lMTcyYTE0MzU0', 'e172a14354', '5995e5ca87cab4.12366113.jpg', '5995e5ca882c40.16534865'),
-(3, 'Biswajit', 'Debnath', 'biswajit@gmail.com', 'jNs+MgnH2K8OVBS33CgKl59YvEQyMmViOGNlYTI5', '22eb8cea29', '5995e6bf965a61.35801277.jpg', '5995e6bf96b7f7.02512707'),
-(4, 'Joydip', 'Chowdhury', 'joydip@gmail.com', 'LoRI6JZIicSmUOETZGrBidhGA5szZmM1NjIzNWU3', '3fc56235e7', '5995e77344c8f6.95583353.jpg', '5995e7734522d3.25948472'),
-(5, 'Mohammad Azwad', 'Hasan Chowdhury', 'azwad@gmail.com', 'gbdqKpKLb+dr0dvlGTO8qxxB641lNGYxYzE0MTA0', 'e4f1c14104', '5995e8269eddb8.10828208.jpg', '5995e8269f39e2.69260335'),
-(6, 'Niyaz', 'Bin Hashem', 'niloy@gmail.com', '9C6GjcwWbbP/TcJJ7J1qRL7L91oyMjAxYzk4NWM0', '2201c985c4', '5995e8dc3f8da6.93542905.jpg', '5995e8dc404846.31501770'),
-(7, 'Kazi Asfaq', 'Ahmed Ador', 'ador@gmail.com', 'bpbsCJ79HO/zy5lJ8K+GZ/36FmVjNmUyYTZmMDY4', 'c6e2a6f068', '5995e977baf5f0.41627401.jpg', '5995e977bb5477.06976623'),
-(8, 'Asif', 'Khan', 'asif@gmail.com', 'QB9OnJ+judJkrk6Hdcmm5gIcs2NhYTE1OTg5NTBm', 'aa1598950f', '5995ea14202ab4.32452676.jpg', '5995ea1420e927.39078154'),
-(9, 'Asadujjaman', 'Nayeem', 'nayem@gmail.com', 'YfE97lFEkz0FRYpFrUsSjOi0twtiMzg5MWU1NjQw', 'b3891e5640', '5995eaba03b656.86969073.jpg', '5995eaba041991.07274439'),
-(10, 'Mohammad Mehedi', 'Hasan Tonmoy', 'tonmoy@gmail.com', 'fnXiWE4f1kQv+aMXmxKcUOVVIcQ4MmRkNDZkNDcz', '82dd46d473', '5995eb57dd2304.83306033.jpg', '5995eb57dd81f5.97519484'),
-(11, 'KH', 'Himel', 'himel@gmail.com', 'H/n+RJuoosqW0Vn830f96qs9mrNkMWJmN2VmMjI3', 'd1bf7ef227', '5995ec05030b44.05461610.jpg', '5995ec05036bb3.79933321');
+(1, 'Rakibul', 'Hasan', 'rakib@gmail.com', 'jh7a3ovv14I9lYayFCROHZcRRlFmZjI5MmQ5YTA4', 'ff292d9a08', '5995ece4479321.78974215.jpg', '5995e4c604a044.26789393'),
+(2, 'Sabbir', 'Ahmed', 'sabbir@gmail.com', 'ozXIF0UKJxREezD/ECgUTTzuiw9lMTcyYTE0MzU0', 'e172a14354', '5995e5ca87cab4.12366113.jpg', '5995e5ca882c40.16534865'),
+(3, 'Mostafizur', 'Rahman', 'mostafiz@gmail.com', 'jNs+MgnH2K8OVBS33CgKl59YvEQyMmViOGNlYTI5', '22eb8cea29', '5995e6bf965a61.35801277.jpg', '5995e6bf96b7f7.02512707');
 
 --
 -- Indexes for dumped tables
